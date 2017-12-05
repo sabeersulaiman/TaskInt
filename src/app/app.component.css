@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+}
+
+.dogs {
+  width: 30%;
+  padding: 10px;
+}
+
+.dogs ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.dogs li {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.dogs li>a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border-left: 3px solid #7718aa;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.showcase {
+  width: 50%;
+overflow-y: auto;
+position: fixed;
+right: 30px;
+top: 20px;
+bottom: 20px;
+}
+
+.showcase h2 {
+text-align: center;
+}
+
+#Image {
+}
+
+#Image img{
+width: 300px;
+margin: 0 auto;
+display: block;
+}
+

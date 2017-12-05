@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="dogs">
+    <ul id="Dogs">
+      <li *ngIf="!dogList">
+        <a>Loading...</a>
+      </li>
+      <li (click)="DogClick(d)" *ngFor="let d of dogList"><a>{{d}}</a></li>
+    </ul>
+  </div>
+  <div class="showcase">
+    <h2 *ngIf="!selectedDog else dogName">
+      Click on a Dog Breed to See it here :)
+    </h2>
+    <ng-template #dogName><h2>{{selectedDog}}</h2></ng-template>
+    <div id="Image">
+      <img *ngIf="dog" [src]="dog.message"/>
+    </div>
+  </div>
+</div>
